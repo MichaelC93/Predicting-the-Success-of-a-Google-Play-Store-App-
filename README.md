@@ -1,4 +1,4 @@
-# Predicting-the-Success-of-a-Google-Play-Store-App
+# Predicting-the-Success-of-a-Google-Play-Store-App-
 
 In this project, my partner and I analyze and try to predict the success of a Google Play Store app using R.
 
