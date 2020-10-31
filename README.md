@@ -4,4 +4,4 @@ In this project, my partner and I analyze and try to predict the success of a Go
 
 Dataset can be found here: https://www.kaggle.com/lava18/google-play-store-apps
 
-Methods used, conclusions, and code can be found in the pdf.
+Methods used, conclusion, and code can be found in the pdf.
