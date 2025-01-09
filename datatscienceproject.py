@@ -4,13 +4,13 @@ library(boot)
 RNGKind(sample.kind "Rounding") 
 set.seed(1) 
 #Converting number of Installs from factor to numeric 
-googleplaystoresInstalls<-as.numeric(gsub(",", ", googleplaystore$Installs)) 
+googleplaystoresInstalls<-as.numeric(gsub(",", "", googleplaystore$Installs)) 
 #Convert Genres to factor 
 googleplaystore$Genres<-factor (googleplaystore$Genres) 
 #Convert Category variables to dummy variables 
-googleplaystore<- fastDummies::dummy_cols(googl leplaystore, select_columns "ca tegory") 
+googleplaystore<- fastDummies::dummy_cols(googl leplaystore, select_columns "category") 
 #Final linear model that was decided on 
-Im.fit=1m(Rating-Reviews Installs, data-googl leplaystore, subset googleplaystor e) 
+Im.fit=1m(Rating-Reviews Installs, data-googleplaystore, subset googleplaystore) 
 #Check for collinearity 
 VIF(Im(Rating-Reviews Installs, data=googleplaystore)) 
 #LOOCV of model 
